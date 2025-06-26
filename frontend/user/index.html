@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Le Binh Minh</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <header id="header-section">
+            <div class="circle-background--pink"></div>
+            <div class="header-container">
+                <h1 class="header__name"><a href="#">Le Binh Minh</a></h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#about-section">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#skill-section">Skills</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#project-section">Project</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#testimonial-section">Testimonials</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact-section">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section" id="about-section">
+            <div class="about-section__box">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="Avatar Le Binh Minh">
+                </div>
+            </div>
+            <div class="about-section__content about-section__box">
+                <h2 class="about-section__name">Le Binh Minh</h2>
+                <p class="about-section__position">Frontend Developer</p>
+                <p class="about-section__description">Frontend developer with a focus on creating fast, accessible, and
+                    visually appealing web experiences using modern technologies.</p>
+                <div class="about-section__btn">
+                    <button class="btn btn--pink" data-overlay="viewCV">View CV</button>
+                    <button class="btn btn--outline" data-overlay="about">Details</button>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="skill-section">
+            <div id="skill-cards">
+            </div>
+            <!-- <div class="skill-controler">
+            <div class="skill-controler__circle"></div>
+            <div class="skill-controler__circle"></div>
+        </div> -->
+        </section>
+        <section class="section" id="project-section">
+            <div id="project-cards">
+            </div>
+            <div class="project-section__btn">
+                <button class="btn btn--pink">See More</button>
+            </div>
+        </section>
+        <section class="section" id="testimonial-section">
+            <div class="testimonial-wrapper">
+                <div id="testimonial-cards" data-slider-container>
+                </div>
+            </div>
+            <div class="testimonial-section__btn">
+                <button class="btn btn--outline btn--circle" data-slider-btn="prev"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <p class="testimonial-section__page-number" id="testimonial__page-number" data-slider-page>1/3</p>
+                <button class="btn btn--outline btn--circle" data-slider-btn="next"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <section class="section" id="contact-section">
+            <div id="contact__info"></div>
+            <form id="contact__form">
+                <div class="contact__form-group">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="fullName">full name</label>
+                        <input class="contact-form__input" type="text" id="fullName" name="fullName" rules="required">
+                        <span class="contact-form__message"></span>
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="company">company</label>
+                        <input class="contact-form__input" type="text" id="company" name="fullName" rules="required">
+                        <span class="contact-form__message"></span>
+                    </div>
+                </div>
+                <div class="contact__form-group">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="email">email</label>
+                        <i class="contact-form__icon fa-regular fa-envelope"></i>
+                        <input class="contact-form__input" type="email" id="email" name="email" rules="required|email">
+                        <span class="contact-form__message"></span>
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="phoneNumber">phone number</label>
+                        <input class="contact-form__input" type="text" id="phoneNumber" name="phoneNumber"
+                            rules="required|phone">
+                        <span class="contact-form__message"></span>
+                    </div>
+                </div>
+                <div class="contact__form-group">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="address">address</label>
+                        <input class="contact-form__input" type="text" id="address" name="address" rules="required">
+                        <span class="contact-form__message"></span>
+                    </div>
+                </div>
+                <div class="contact__form-group">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="yourMessage">your message</label>
+                        <textarea class="contact-form__textarea" id="yourMessage" name="yourMessage"
+                            rules="required|min:20"></textarea>
+                        <span class="contact-form__message"></span>
+                    </div>
+                </div>
+                <div class="contact-form__btn">
+                    <input class="btn btn--pink btn--small" type="submit" value="send message">
+                </div>
+            </form>
+        </section>
+        <footer id="footer-section">
+            <ul id="footer__list"></ul>
+            <p class="footer__description"> &copy;2025 LeBinhMinh</p>
+        </footer>
+        <div class="circle-background--gray"></div>
+    </div>
+    <div id="global-overlay" class="hidden">
+    </div>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

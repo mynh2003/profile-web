@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "web profile backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --inspect server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynh2003/profile-backend.git"
+  },
+  "keywords": [
+    "web",
+    "profile",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Le Binh Minh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mynh2003/profile-backend/issues"
+  },
+  "homepage": "https://github.com/mynh2003/profile-backend#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
